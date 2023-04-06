@@ -1,18 +1,17 @@
 import React from "react";
 import {
   Card,
-  CardBody,
   CardHeader,
   Typography,
   Button,
-  IconButton,
   Input,
   Textarea,
 } from "@material-tailwind/react";
-import { UsersIcon } from "@heroicons/react/24/solid";
+import {} from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
-import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, teamData, contactData } from "@/data";
+import { TeamCard } from "@/widgets/cards";
+import { teamData, contactData } from "@/data";
+import logo from "../assets/brand.png";
 
 export function Home() {
   return (

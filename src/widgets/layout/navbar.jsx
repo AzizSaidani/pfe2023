@@ -66,7 +66,7 @@ export function Navbar({ brandName, routes, action }) {
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
-          <img src={logo} alt="Brand logo"  style={{ maxWidth: "120px" ,marginRight: "-100px" }} />
+          <img src={logo} alt="Brand logo"  style={{ maxWidth: "160px" ,marginRight: "-100px" }} />
           </Typography>
         </Link>
         <div className="hidden lg:block">{navList}</div>

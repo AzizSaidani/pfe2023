@@ -1,21 +1,26 @@
 import PropTypes from "prop-types";
 import { Typography, IconButton } from "@material-tailwind/react";
+import logo from "../../assets/brand.png";
 
 const year = new Date().getFullYear();
 
-export function Footer({ title, description, socials, menus, copyright }) {
+export function Footer({ description, socials, menus, copyright }) {
   return (
-    <footer className="relative px-4 pt-8 pb-6">
+    <footer className="relative px-4 pb-6 pt-8">
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
           <div className="w-full px-4 lg:w-6/12">
             <Typography variant="h4" className="mb-4" color="blue-gray">
-              {title}
+              <img
+                src={logo}
+                alt="Brand logo"
+                style={{ marginRight: "-100px" }}
+              />
             </Typography>
             <Typography className="font-normal text-blue-gray-500">
               {description}
             </Typography>
-            <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
+            <div className="mx-auto mb-8 mt-6 flex justify-center gap-2 md:mb-0 lg:justify-start">
               {socials.map(({ color, name, path }) => (
                 <a
                   key={name}
@@ -80,8 +85,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
 
 Footer.defaultProps = {
   title: "Material Tailwind",
-  description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
+  description: "Support: support@bright.com ",
   socials: [
     {
       color: "blue",
@@ -118,10 +122,10 @@ Footer.defaultProps = {
     {
       name: "useful links",
       items: [
-        { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-        { name: "Blog", path: "https://www.creative-tim.com/blog" },
+        { name: "Home", path: "https://www.creative-tim.com/presentation" },
+        { name: "Services", path: "https://www.creative-tim.com/blog" },
         {
-          name: "Github",
+          name: "About Us",
           path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
         },
         {
@@ -131,36 +135,22 @@ Footer.defaultProps = {
       ],
     },
     {
-      name: "other resources",
+      name: "Adresses",
       items: [
         {
-          name: "MIT License",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
-        },
-        {
-          name: "Contribute",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
-        },
-        {
-          name: "Change Log",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
-        },
-        {
-          name: "Contact Us",
-          path: "https://creative-tim.com/contact-us?ref=mtk",
+          name: "Adress, Rue 5555",
         },
       ],
     },
   ],
   copyright: (
     <>
-      Copyright © {year} Material Tailwind by{" "}
+      Copyright © {year} Bright, Inc -- All Right Reserved{" "}
       <a
         href="https://www.creative-tim.com?ref=mtk"
         target="_blank"
         className="text-blue-gray-500 transition-colors hover:text-blue-500"
       >
-        Creative Tim
       </a>
       .
     </>
