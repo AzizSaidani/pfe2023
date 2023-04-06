@@ -1,19 +1,27 @@
 export const teamData = [
   {
     img: "/img/team-1.jpg",
-    name: "Service Reliability",
-    position:
-      "We work together to examine your needs, evalute your options, and answer your questions",
+    position: "Disinfection",
   },
   {
     img: "/img/team-2.jpg",
-    name: "Flexibility",
-    position: "A flexibile service tailored to your particular needs",
+    position: "Move in/out cleaning",
   },
   {
     img: "/img/team-3.jpg",
-    name: "Guarantee",
-    position: "Our services are backed by a 24-hour re-clean guarantee.",
+    position: "Deep Cleaning.",
+  },
+  {
+    img: "/img/team-1.jpg",
+    position: "Commercial Cleaning",
+  },
+  {
+    img: "/img/team-2.jpg",
+    position: "Residental Cleaning",
+  },
+  {
+    img: "/img/team-3.jpg",
+    position: "Post Construction & Renovation Clean-up.",
   },
 ];
 
