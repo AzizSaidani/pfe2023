@@ -76,16 +76,6 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pb-48 pt-20">
-        <div className="container mx-auto">
-          <PageTitle heading="Why Us?"></PageTitle>
-          <div className="mt-24 grid grid-cols-1  gap-x-40 md:grid-cols-2 xl:grid-cols-3">
-            {teamData.map(({ img, name, position }) => (
-              <TeamCard key={name} img={img} name={name} position={position} />
-            ))}
-          </div>
-        </div>
-      </section>
       <section className="relative bg-blue-gray-50/50 px-4 py-24">
         <div className="container mx-auto">
           <PageTitle heading="Why Us?"></PageTitle>
@@ -111,9 +101,61 @@ export function Home() {
               </Card>
             ))}
           </div>
-          <PageTitle heading="Want to work with us?">
-            Complete this form and we will get back to you in 24 hours.
-          </PageTitle>
+
+          <div className="container mx-auto">
+            <PageTitle heading="Our Services"></PageTitle>
+            <div className="mt-24 grid grid-cols-1  gap-x-40 md:grid-cols-2 xl:grid-cols-3">
+              {teamData.map(({ img, name, position }) => (
+                <TeamCard
+                  key={name}
+                  img={img}
+                  name={name}
+                  position={position}
+                />
+              ))}
+            </div>
+          </div>
+          <br></br>
+          <br></br>
+          <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
+            <div className="container mx-auto">
+              <div className="mt-32 flex flex-wrap items-center">
+                <div
+                  className="mx-auto -mt-8 w-full px-4"
+                  style={{ marginTop: "80px" }}
+                >
+                  <Typography
+                    variant="h3"
+                    className="mb-3 font-bold"
+                    color="blue-gray"
+                  >
+                    Interested in becoming part of our team?
+                  </Typography>
+                  <Typography className="mb-8 font-normal text-blue-gray-500">
+                    Our platform allows for a flexible schedule with generous
+                    pay. Becoming a maid is a simple process that provides the
+                    luxuries of working when and where you want.
+                  </Typography>
+                  <Button
+                    variant="gradient"
+                    size="md"
+                    className="mt-8"
+                    style={{
+                      display: "block",
+                      margin: "auto",
+                      fontSize: "16px",
+                      paddingLeft: "35px",
+                      paddingRight: "35px",
+                    }}
+                  >
+                    Sign Up{" "}
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <PageTitle heading="Contact Us"></PageTitle>
           <form className="mx-auto mt-12 max-w-3xl text-center">
             <div className="mb-8 flex gap-8">
               <Input variant="standard" size="lg" label="Full Name" />
